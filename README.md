@@ -1,5 +1,9 @@
 # Microsoft.MapIdentityApi
 
+MapIdentityApi<TUser> is an extension method to simplify the process of using ASP.NET Core Identity for authentication in JavaScript-based single page apps or Blazor apps.
+
+
+
 
 ## Step 1 - Create your identity context
 
