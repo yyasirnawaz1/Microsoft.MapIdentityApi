@@ -1,0 +1,19 @@
+
+
+// login and get access token 
+POST https://localhost:7202/identity/login
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "username" : "thisisnabi@outlook.com",
+    "password" : "ThiSisNabi@1122t"
+}
+
+// response
+#Content:
+#{
+#  "token_type": "Bearer",
+#  "access_token": "CfDJ8IldTW6L6lhOn_sEG5smc1c4cNbHIcDaPV_wzLm0LtkveVY2kH5qgrM-RB9xirPgT0ANgxfDVbzj5CHQONnlxhZ13cM6t-_RrADTWsLIzzdTJhLocb5hFoQexYbKasdgeRQtg0CGHwVFnM3siZ66OP-qYdn4W7gnNOn8aC5zQyb0XA_Escm2I8VEtRzq8Qg1MDnoaPW-kj3Ajbiv6wE4qf9Bxbk5m7j1R0kaq6UwS8qAKWMRiUqHkMrlM3CVBob8ZUZp-nd8Otsnc42hmL9teF3yWNWW4drWRxKlkC4m_4pdXl4s551MW5Y3D6fTRFzOurn-gcZGm1EkhOqpKUFc3HKf7iGfEOjjpjcdLCCGQWM1ICyKXBHXEG4poORbI390R8uYRdnqCTQ5m_AZ7kaK6GjKIi32d3TPrusmHZGjdxjHplC5hUd9eX_3NdVIFbfBEnTospjNSQYI6jKE1qKy_1he7OuixqnYnotEXZ1vT5TZZ71z0SaZC17dyvzBypbkBkwf7ZEWF4UfvEqONgvUVM6HSGQ8YvvKsNx6bnl5GUDx",
+#  "expires_in": 3600
+#}
