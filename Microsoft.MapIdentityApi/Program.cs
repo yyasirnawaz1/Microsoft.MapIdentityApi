@@ -2,9 +2,9 @@
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    var cunfig = builder.Configuration;
+    var config = builder.Configuration;
 
-    builder.Services.InstallFromAssembly<Program>(cunfig);
+    builder.Services.InstallFromAssembly<Program>(config);
 }
 
 var app = builder.Build();
