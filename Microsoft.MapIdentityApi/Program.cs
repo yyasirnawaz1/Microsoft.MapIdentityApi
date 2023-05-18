@@ -2,17 +2,9 @@
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    // adds authorization policy services
-    builder.Services.AddAuthorization();
+    var cunfig = builder.Configuration;
 
-    // class ApplicationDbContext : IdentityDbContext<IdentityUser> ...
-    builder.Services.AddDbContext<ApplicationDbContext>(
-        options => options.UseInMemoryDatabase("dotNET8_Preview4"));
-
-    // adds a set of common identity services to the application
-    builder.Services.AddIdentityApiEndpoints<IdentityUser>()
-        .AddEntityFrameworkStores<ApplicationDbContext>();
-
+    builder.Services.InstallFromAssembly<Program>(cunfig);
 }
 
 var app = builder.Build();
